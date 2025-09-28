@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>🎯 Hangman</h1>
+      <p class="instruction">Guess the hidden word before your chances run out!</p>
+
+      <div id="word"></div>
+
+      <div class="status">
+        <p>❌ Wrong guesses: <span id="wrong-guesses"></span></p>
+        <p>❤️ Remaining guesses: <span id="remaining"></span></p>
+      </div>
+
+      <div id="keyboard"></div>
+
+      <button id="reset-btn">🔄 Restart Game</button>
+    </div>
+
+    <!-- 🎉 Popup Modal -->
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <p id="popup-message"></p>
+        <button id="popup-btn">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
