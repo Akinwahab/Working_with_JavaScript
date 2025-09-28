@@ -71,7 +71,7 @@ function showAnimalInRandomHole() {
 }
 
 function startMoleMovement() {
-  moleTimer = setInterval(showAnimalInRandomHole, 300);
+  moleTimer = setInterval(showAnimalInRandomHole, 100);
 }
 
 function stopMoleMovement() {
